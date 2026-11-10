@@ -5,3 +5,7 @@
 
 class PrecioNoPositivo(ValueError):
     """Un precio de la Lonja tiene que ser mayor que 0 €/kg."""
+
+
+class SinPrecioVigente(LookupError):
+    """No se puede vender: la publicación vigente es «–» o aún no hay ninguna."""
