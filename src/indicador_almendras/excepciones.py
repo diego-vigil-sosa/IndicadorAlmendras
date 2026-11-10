@@ -9,3 +9,7 @@ class PrecioNoPositivo(ValueError):
 
 class SinPrecioVigente(LookupError):
     """No se puede vender: la publicación vigente es «–» o aún no hay ninguna."""
+
+
+class PlazoNoPosteriorAlInicio(ValueError):
+    """El plazo de una campaña tiene que ser posterior a su inicio."""
