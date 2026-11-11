@@ -10,4 +10,4 @@ class Campania:
     variedad: Variedad
     inicio: date
     plazo: date
-    publicaciones: dict[date, Decimal | None] = field(default_factory=dict)
+    precios_por_fecha: dict[date, Decimal | None] = field(default_factory=dict)
