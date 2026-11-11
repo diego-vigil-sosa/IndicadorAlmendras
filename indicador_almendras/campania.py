@@ -1,6 +1,6 @@
 from datetime import date
+from decimal import Decimal
 
-from indicador_almendras.precio import Precio
 from indicador_almendras.variedad import Variedad
 
 
@@ -21,4 +21,4 @@ class Campania:
         self._variedad = variedad
         self._inicio = inicio
         self._plazo = plazo
-        self._publicaciones: dict[date, Precio | None] = {}
+        self._publicaciones: dict[date, Decimal | None] = {}

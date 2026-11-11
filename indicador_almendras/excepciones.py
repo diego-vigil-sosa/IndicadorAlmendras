@@ -3,14 +3,5 @@
 # Se declaran en el M0; el código que las comprueba se escribe en el M1
 
 
-class PrecioNoPositivo(ValueError):
-    """Un precio de la Lonja tiene que ser mayor que 0 €/kg."""
-
-
-class SinPrecioVigente(LookupError):
-    """No se puede vender: la publicación vigente es «–» o aún no hay
-    ninguna."""
-
-
 class PlazoNoPosteriorAlInicio(ValueError):
     """El plazo de una campaña tiene que ser posterior a su inicio."""
