@@ -14,16 +14,3 @@ class SinPrecioVigente(LookupError):
 
 class PlazoNoPosteriorAlInicio(ValueError):
     """El plazo de una campaña tiene que ser posterior a su inicio."""
-
-
-class VariedadDistintaDeLaCampania(ValueError):
-    """Una campaña solo reúne publicaciones de su variedad."""
-
-
-class PublicacionFueraDeCampania(ValueError):
-    """Al registrar: publicación posterior al plazo o anterior a la vigente
-    al inicio."""
-
-
-class FechaFueraDeCampania(ValueError):
-    """Al preguntar: la fecha tiene que estar entre el inicio y el plazo."""
