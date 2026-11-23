@@ -6,7 +6,7 @@ from indicador_almendras.campania import Campania
 from indicador_almendras.variedad import Variedad
 
 
-@dataclass
+@dataclass(eq=False)
 class Cooperativa:
     precios: dict[Variedad, dict[date, Decimal | None]] = field(default_factory=dict)
     campanias: set[Campania] = field(default_factory=set)
